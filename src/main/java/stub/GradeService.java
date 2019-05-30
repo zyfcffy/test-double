@@ -9,8 +9,8 @@ public class GradeService {
         this.gradeSystem = gradeSystem;
     }
 
-    public double calculateAverageGrades(Student student) {
-        List<Double> doubles = gradeSystem.gradesFor(student);
+    public double calculateAverageGrades(long studentId) {
+        List<Double> doubles = gradeSystem.gradesFor(studentId);
 
         double averageGrade = doubles.stream()
                 .mapToDouble((grade) -> grade)

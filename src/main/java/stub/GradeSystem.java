@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class GradeSystem {
-    public List<Double> gradesFor(Student student) {
+    public List<Double> gradesFor(long studentId) {
         /*
         * 1. 数据库中获取学生id
         * 2. 向第三方系统发送学生id，获取鉴权信息
